@@ -13,6 +13,13 @@ public abstract class Human {
 	private String address;
 	private short age;
 
+	//Default Constructor
+	public Human() {
+		this.name = "John Doe";
+		this.address = "123 Main Street";
+		this.age = 0;
+	}
+
 	// constructor that takes only two paras
 	public Human(String name, short age) {
 		this.name = name;
