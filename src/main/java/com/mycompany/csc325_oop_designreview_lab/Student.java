@@ -13,32 +13,37 @@ public class Student extends Human{
     //Member Variables
     private String name;
     private short age;
+    private float GPA;
 
     //Default Constructor
     public Student(){
         super();
         this.name = "John Doe";
         this.age = 0;
+        this.GPA = 0.0f;
     }
 
     //Parameterized Constructor
 
 
-    public Student(String name, short age) {
+    public Student(String name, short age, float GPA) {
         this.name = name;
         this.age = age;
+        this.GPA = GPA;
     }
 
-    public Student(String name, short age, String name1, short age1) {
+    public Student(String name, short age, String name1, short age1, float GPA1) {
         super(name, age);
         this.name = name1;
         this.age = age1;
+        this.GPA = GPA1;
     }
 
     //Copy Constructor
     public Student (Student other){
         this.name = other.name;
         this.age = other.age;
+        this.GPA = other.GPA;
     }
 
     //Setter and Getters
@@ -61,6 +66,14 @@ public class Student extends Human{
         this.age = age;
     }
 
+    public float getGPA() {
+        return GPA;
+    }
+
+    public void setGPA(float GPA) {
+        this.GPA = GPA;
+    }
+
     @Override
     public String getAddress() {
         return "";
@@ -71,8 +84,4 @@ public class Student extends Human{
 
     }
 
-
-	// ToDo 3: Add a field for GPA and create a setter and a getter
-	
-	// ToDo 4: Add comments to your code
 }
