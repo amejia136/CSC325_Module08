@@ -12,9 +12,6 @@ public class MainClass {
 
  public static void main(String[] args) {
 
-
-
-		// ToDo 9: Add a toString method for the Student class
 		// ToDo 10: Add a toString method for the Freshman class
 
 		Student std1= new Student("James", (short) 20, 0);

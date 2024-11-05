@@ -22,4 +22,10 @@ public class Senior extends Student{
         super(other);
         this.credtis = credtis;
     }
+
+    @Override
+    public String toString() {
+        String formattedSenior = String.format("%s, %d, %d, %d", getName(), getAge(), getGPA(), credtis);
+        return formattedSenior;
+    }
 }
