@@ -23,6 +23,5 @@ public class MainClass {
         System.out.println(std2);
 
     }
-
 }
 
