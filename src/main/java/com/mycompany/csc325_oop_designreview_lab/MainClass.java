@@ -5,32 +5,24 @@
 package com.mycompany.csc325_oop_designreview_lab;
 
 /**
- *
  * @author MoaathAlrajab
  */
 public class MainClass {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		// ToDo 10: Add a toString method for the Freshman class
 
-		Student std1= new Student("James", (short) 20, 0);
-                // ToDo 11: Add a toString method for the Senior class
+        Student std1 = new Student("James", (short) 20, 0);
 
-		Freshman std3 = (Freshman) new Student("James", (short) 20, 12); // name, age, credits
+        Freshman std3 = (Freshman) new Student("James", (short) 20, 12); // name, age, credits
 
-                Senior std2 = (Senior) new Student("John", (short) 30, 90);
+        Senior std2 = (Senior) new Student("John", (short) 30, 90);
 
-		// ToDo 12: Set the gpa of the student using the scanner and user
-		// 			input and then print the output.
+        System.out.println(std1);
 
-		System.out.println(std1);
+        System.out.println(std2);
 
-                System.out.println(std2);
-
-		// ToDo 13: add comments and explain your code
-
-	}
+    }
 
 }
 
