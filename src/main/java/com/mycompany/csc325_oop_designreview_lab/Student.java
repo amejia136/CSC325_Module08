@@ -13,26 +13,26 @@ public class Student extends Human{
     //Member Variables
     private String name;
     private short age;
-    private float GPA;
+    private int GPA;
 
     //Default Constructor
     public Student(){
         super();
         this.name = "John Doe";
         this.age = 0;
-        this.GPA = 0.0f;
+        this.GPA = 0;
     }
 
     //Parameterized Constructor
 
 
-    public Student(String name, short age, float GPA) {
+    public Student(String name, short age, int GPA) {
         this.name = name;
         this.age = age;
         this.GPA = GPA;
     }
 
-    public Student(String name, short age, String name1, short age1, float GPA1) {
+    public Student(String name, short age, String name1, short age1, int GPA1) {
         super(name, age);
         this.name = name1;
         this.age = age1;
@@ -66,11 +66,11 @@ public class Student extends Human{
         this.age = age;
     }
 
-    public float getGPA() {
+    public int getGPA() {
         return GPA;
     }
 
-    public void setGPA(float GPA) {
+    public void setGPA(int GPA) {
         this.GPA = GPA;
     }
 
