@@ -84,4 +84,9 @@ public class Student extends Human{
 
     }
 
+    @Override
+    public String toString() {
+        String formattedStudent = String.format("%s, %d, %d", name, age, GPA);
+        return formattedStudent;
+    }
 }
