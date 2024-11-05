@@ -17,4 +17,9 @@ public class Freshman extends Student{
         super(other);
     }
 
+    @Override
+    public String toString() {
+        String formattedFreshman = String.format("%s, %d, %d", getName(), getAge(), getGPA());
+        return formattedFreshman;
+    }
 }
